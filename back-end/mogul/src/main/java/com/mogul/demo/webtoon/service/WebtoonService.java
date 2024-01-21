@@ -1,13 +1,3 @@
-package com.mogul.demo.webtoon.service;
-
-import com.mogul.demo.webtoon.dto.WebtoonAllPageRes;
-import com.mogul.demo.webtoon.dto.WebtoonGenrePageRes;
-import com.mogul.demo.webtoon.dto.WebtoonMainPageRes;
-
-public interface WebtoonService {
-    WebtoonMainPageRes findWebtoonMain(int page_number, int page_size);
-
-    WebtoonAllPageRes findWebtoonAll(int pageNumber, int pageSize);
-
-    WebtoonGenrePageRes findWebtoonByGenre(String genre, int pageNumber, int pageSize);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:b47bf5d20877a7c724b84823f8dfdfb7fe971c19523b13f225d5feb8d86278d9
+size 615

@@ -1,7 +1,10 @@
-export default function Webtoon() {
+import Mypage from "./Mypage";
+
+export default function profile() {
   return (
     <div>
-      프로필 페이지
+      <Mypage />
+      <div>프로필 전체 페이지 </div>
     </div>
-  )
+  );
 }

@@ -1,7 +1,17 @@
+import Navbar from "@/components/Navbar"
 export default function Webtoon() {
+
+
   return (
     <div>
-      웹툰 페이지
+      <Navbar/>
+      <div>
+        <h1>인기 웹툰</h1>
+        
+      </div>
+      <div>
+        <h1>서재에 많이 담긴 웹툰</h1>
+      </div>
     </div>
   )
 }

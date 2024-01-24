@@ -1,7 +1,11 @@
-export default function Webtoon() {
+import BoardList from "./BoardList";
+import Navbar from "@/components/Navbar";
+
+export default function BoardDetail() {
   return (
     <div>
-      게시글 상세 페이지
+      <Navbar />
+      <BoardList />
     </div>
-  )
+  );
 }

@@ -1,17 +1,3 @@
-import Navbar from "@/components/Navbar"
-export default function Webtoon() {
-
-
-  return (
-    <div>
-      <Navbar/>
-      <div>
-        <h1>인기 웹툰</h1>
-        
-      </div>
-      <div>
-        <h1>서재에 많이 담긴 웹툰</h1>
-      </div>
-    </div>
-  )
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:4519d5d465c8529c53d4f8579c638af248780586c00b3efed356c271636258e7
+size 1730

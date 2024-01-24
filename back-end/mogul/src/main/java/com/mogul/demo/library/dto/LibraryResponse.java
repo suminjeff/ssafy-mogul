@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4248da9f38fd6c3da777cd6c623891a0e2021fa77883f99cd75d7584c97a7040
-size 445
+package com.mogul.demo.library.dto;
+
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+import java.util.Date;
+
+@Getter
+@Setter
+@NoArgsConstructor
+public class LibraryResponse {
+    private long id;
+    private String name;
+    private long subscriberNumber;
+    private Date registeredDate;
+    private String thumbnail1;
+    private String thumbnail2;
+    private String thumbnail3;
+    private String thumbnail4;
+}

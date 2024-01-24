@@ -1,4 +1,4 @@
-import Navbar from "@/components/Navbar";
+import Navbar from "@/components/navbar/Navbar";
 import MypageContainer from "./MypageContainer";
 
 export default function profile() {

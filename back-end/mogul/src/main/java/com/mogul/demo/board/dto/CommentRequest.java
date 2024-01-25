@@ -1,10 +1,3 @@
-package com.mogul.demo.board.dto;
-
-import lombok.Data;
-
-@Data
-public class CommentRequest {
-	private String content; // 댓글 내용
-	private int user; // 댓글 작성자
-	private int article; // 어떤 게시글의 댓글인지
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d1e6f40b9e8028702505dd7e1e8ab194d8f3ecf57637712b44efdaaaaa036458
+size 849

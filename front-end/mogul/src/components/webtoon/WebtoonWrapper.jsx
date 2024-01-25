@@ -1,11 +1,17 @@
 import React from 'react';
+import WebtoonThumbnailCard from './WebtoonThumbnailCard';
 
 function WebtoonWrapper({ webtoons }) {
   
     return (
-        <div>
-          웹툰 모음
-        </div>
+      <div style={{
+        display: "flex",
+        flexDirection: "row",
+      }}>
+        {webtoons.map((webtoon) => (
+          <WebtoonThumbnailCard webtoon={webtoon}/>
+        ))}
+      </div>
     );
 }
 

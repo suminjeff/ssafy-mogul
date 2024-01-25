@@ -1,5 +1,5 @@
 import BoardCreate from "./BoardCreate";
-import Navbar from "@/components/Navbar";
+import Navbar from "@/components/navbar/Navbar";
 
 export default function BoardWrite() {
   return (

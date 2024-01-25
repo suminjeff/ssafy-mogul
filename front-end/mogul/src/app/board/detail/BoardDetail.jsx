@@ -1,12 +1,3 @@
-"use client";
-import { useRouter } from "next/router";
-
-const BoardDetail = () => {
-  const router = useRouter();
-  const { id } = router.query;
-
-  console.log(id);
-  return <div>글번호 : {id} 에 해당하는 페이지</div>;
-};
-
-export default BoardDetail;
+version https://git-lfs.github.com/spec/v1
+oid sha256:39fc2ac5ef16c07669475df35570af13e537c446cc885ec23f812966e88299f1
+size 262

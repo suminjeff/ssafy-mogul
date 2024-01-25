@@ -1,14 +1,3 @@
-package com.mogul.demo.library.mapper;
-
-import com.mogul.demo.library.dto.LibraryResponse;
-import com.mogul.demo.library.entity.LibraryWebtoonThumbnailEntity;
-import org.mapstruct.Mapper;
-
-@Mapper
-public interface LibraryMapper {
-
-    public static LibraryMapper INSTANCE = new LibraryMapperImpl();
-
-    LibraryResponse fromLibraryWebtoonThumbnailEntityToLibraryResponse(LibraryWebtoonThumbnailEntity libraryWebtoonThumbnailEntity);
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:9ed4980883a8ab972b5e8e07aef62e05f0b5421509e707d6cc00c08ae339cd19
+size 609

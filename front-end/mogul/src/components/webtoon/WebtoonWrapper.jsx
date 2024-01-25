@@ -4,10 +4,7 @@ import WebtoonThumbnailCard from './WebtoonThumbnailCard';
 function WebtoonWrapper({ webtoons }) {
   
     return (
-      <div style={{
-        display: "flex",
-        flexDirection: "row",
-      }}>
+      <div className='grid grid-cols-5 gap-5'>
         {webtoons.map((webtoon) => (
           <WebtoonThumbnailCard webtoon={webtoon}/>
         ))}

@@ -1,14 +1,3 @@
-"use client"
-import { useRouter } from 'next/router';
-import React from 'react';
-
-function WebtoonThumbnailCard({ webtoon }) {
-    const router = useRouter()
-    return (
-        <div onClick={router.push(`/${webtoon.id}`)}>
-          웹툰 썸네일
-        </div>
-    );
-}
-
-export default WebtoonThumbnailCard;
+version https://git-lfs.github.com/spec/v1
+oid sha256:07b543c7bcf08d112285d768020eadbbf606502dd7a086dadeb1a292b833fdf6
+size 1344

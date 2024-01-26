@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3f178707eb98f9644a41df56c61af22986270ea289064ac85e23ccf2955b9f22
-size 850
+package com.mogul.demo.user.dto;
+
+import java.util.Date;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import lombok.Getter;
+import lombok.RequiredArgsConstructor;
+
+
+public class UserResponse {
+
+}

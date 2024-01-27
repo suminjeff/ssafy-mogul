@@ -1,18 +1,3 @@
-package com.mogul.demo.review.service;
-
-import com.mogul.demo.review.dto.ReviewAddRequest;
-import com.mogul.demo.review.dto.ReviewResponse;
-
-import java.util.List;
-
-public interface ReviewService {
-    List<ReviewResponse> findReviewsByWebtoonId(long webtoonId, int pageNumber, int pageSize);
-
-    boolean addReview(ReviewAddRequest reviewAddRequest);
-
-    float findDrawingGrade(long webtoonId);
-
-    float findStoryGrade(long webtoonId);
-
-    float findDirectingGrade(long webtoonId);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:71d0c5fa316a473af7e789e9773e4dbaa36b86eee68a76712c18fdd832e2ebee
+size 681

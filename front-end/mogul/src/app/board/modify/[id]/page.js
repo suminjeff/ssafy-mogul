@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e06e8983b042daa81acea75e0a8fe20e997d5878eda8098d78504de2a5f5b5a2
-size 305
+import Navbar from "@/components/navbar/Navbar";
+import BoardModify from "./BoardModify";
+
+export default function Page({ params }) {
+  return (
+    <div>
+      <Navbar />
+      <div>글수정 페이지입니다 글번호는 : {params.id}</div>
+      <BoardModify boardId={params.id} />
+    </div>
+  );
+}

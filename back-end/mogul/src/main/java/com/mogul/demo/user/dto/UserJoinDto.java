@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:82412da9e01a10830217619a79c97b4aacc40dbad5200acc502a43e2a6486a94
-size 533
+package com.mogul.demo.user.dto;
+
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Pattern;
+import lombok.AllArgsConstructor;
+
+@AllArgsConstructor
+public class UserJoinDto {
+	@Email
+	@NotNull
+	private String email;
+
+	@Pattern(regexp = "^(?=.*[a-zA-Z])(?=.*[!@#$%^*+=-])(?=.*[0-9]).{8,32}$")
+	@NotNull
+	private String password;
+
+	@Pattern(regexp = "[가-힣A-Za-z0-9]{2,15}")
+	@NotNull
+	private String nickname;
+}

@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3e586974ed6f6e2a8fac5d85c5b3464e5a3ddbd403502ed02ba499056006f9c7
-size 321
+package com.mogul.demo.library.entity;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.io.Serializable;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class LibrarySubscriptionThumbnailPK implements Serializable {
+    private long id;
+    private long userId;
+}

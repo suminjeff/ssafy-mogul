@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e33abba81388f0a6451fa173b13d0e1a14a915dd14fcf713cb36e23ad2687d80
-size 488
+package com.mogul.demo.library.dto;
+
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
+import lombok.*;
+
+import java.util.Date;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@ToString
+public class LibraryCreateRequest {
+
+    @NotBlank(message = "서재 이름은 비어있을 수 없습니다.")
+    @Size(max = 20, message = "서재이름은 20글자를 넘을 수 없습니다.")
+    private String name;
+
+    private long userId;
+
+}

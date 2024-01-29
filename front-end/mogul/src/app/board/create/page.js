@@ -5,7 +5,9 @@ export default function BoardWrite() {
   return (
     <div>
       <Navbar />
-      <BoardCreate />
+      <div className="text-center">
+        <BoardCreate />
+      </div>
     </div>
   );
 }

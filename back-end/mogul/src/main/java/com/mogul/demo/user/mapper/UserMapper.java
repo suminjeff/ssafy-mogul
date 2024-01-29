@@ -1,16 +1,3 @@
-package com.mogul.demo.user.mapper;
-
-import org.mapstruct.Mapper;
-import org.mapstruct.Mapping;
-
-import com.mogul.demo.board.dto.ArticleCreateRequest;
-import com.mogul.demo.board.entity.Article;
-import com.mogul.demo.user.dto.UserJoinRequest;
-import com.mogul.demo.user.entity.User;
-
-@Mapper
-public interface UserMapper {
-
-	@Mapping(target = "userId", source = "userId")
-	User userJoinRequestToUser(UserJoinRequest userJoinRequest);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:dde433c17199886d496cdf749d20e92c5a73e0ef6e54f70dd4e8d8268f2a25cf
+size 538

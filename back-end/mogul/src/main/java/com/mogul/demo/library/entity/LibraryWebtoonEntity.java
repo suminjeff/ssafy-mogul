@@ -1,23 +1,3 @@
-package com.mogul.demo.library.entity;
-
-import jakarta.persistence.*;
-import lombok.*;
-
-@Entity
-@Table(name = "library_webtoon")
-@Getter
-@Setter
-@NoArgsConstructor
-@AllArgsConstructor
-@ToString
-@EqualsAndHashCode
-@IdClass(LibraryWebtoonPK.class)
-public class LibraryWebtoonEntity {
-    @Id
-    @Column(name = "library_id")
-    private long libraryId;
-
-    @Id
-    @Column(name = "webtoon_id")
-    private long webtoonId;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:74eb07a76da9a0f304e81806ae8155c96a43701f19c7328e0b48f54944ddf709
+size 423

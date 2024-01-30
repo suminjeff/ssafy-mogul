@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d3e061bd880db91d6945f52b37e0863ced924c961d5a5fe9f7d09e27d8bda2a3
-size 473
+package com.mogul.demo.user.exception;
+
+public class UserDuplicationException extends RuntimeException {
+	private static final String DEFAULT_MESSAGE = "Duplicated Email";
+
+	public UserDuplicationException() {
+	}
+
+	public UserDuplicationException(String message) {
+		super(message);
+	}
+
+	public UserDuplicationException(Throwable cause) {
+		super(DEFAULT_MESSAGE, cause);
+	}
+
+	public UserDuplicationException(String message, Throwable cause) {
+		super(message, cause);
+	}
+}

@@ -1,15 +1,3 @@
-import Navbar from "@/components/navbar/Navbar";
-import MypageContainer from "./MypageContainer";
-
-export default function profile() {
-  return (
-    <div>
-      <Navbar />
-      {/* 사용자 지정색상은 아예 따로 tailwind.config.js에서
-      처리하거나 직접하려면 style로 지정해야되나봐요 */}
-      <div class="mx-20 rounded-md" style={{ backgroundColor: "#DED0B6" }}>
-        <MypageContainer />
-      </div>
-    </div>
-  );
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d1d785d75e64be022f98c3ba839d6a9b3789433fdb83257660ea12ff4f592539
+size 465

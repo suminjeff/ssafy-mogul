@@ -1,17 +1,13 @@
 import Navbar from "@/components/navbar/Navbar";
 import BoardList from "./[id]/BoardList";
+import BackgroundTest from "./BackgroundTest";
 
 export default function Board() {
   return (
     <div>
       <Navbar />
-      <div
-        className="justify-center items-center"
-        style={{ backgroundColor: "#DED0B6" }}
-      >
-        <div className="mx-auto" style={{ maxWidth: "85%" }}>
-          <BoardList />
-        </div>
+      <div className="text-center">
+        <BackgroundTest />
       </div>
     </div>
   );

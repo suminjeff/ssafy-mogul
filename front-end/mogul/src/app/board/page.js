@@ -5,8 +5,14 @@ export default function Board() {
   return (
     <div>
       <Navbar />
-      게시판 페이지
-      <BoardList />
+      <div
+        className="justify-center items-center"
+        style={{ backgroundColor: "#DED0B6" }}
+      >
+        <div className="mx-auto" style={{ maxWidth: "85%" }}>
+          <BoardList />
+        </div>
+      </div>
     </div>
   );
 }

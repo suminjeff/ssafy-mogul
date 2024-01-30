@@ -1,13 +1,3 @@
-package com.mogul.demo;
-
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration;
-
-@SpringBootApplication(exclude = SecurityAutoConfiguration.class)
-public class MogulApplication {
-	public static void main(String[] args) {
-		SpringApplication.run(MogulApplication.class, args);
-	}
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:636b5edaf7e9839a6300c8994fa88b7b2e833e413a662d1c341750169c428d86
+size 437

@@ -1,19 +1,3 @@
-import BoardList from "./BoardList";
-import Navbar from "@/components/navbar/Navbar";
-import BoardPaginaiton from "./BoardPagination";
-
-export default function BoardDetail({ params }) {
-  return (
-    <div>
-      <Navbar />
-      <div
-        className="justify-center items-center"
-        style={{ backgroundColor: "#DED0B6" }}
-      >
-        <div className="mx-auto" style={{ maxWidth: "85%" }}>
-          <BoardList />
-        </div>
-      </div>
-    </div>
-  );
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:329abbc652cde70312ab1673a795da9f8b71aa8f25b757ab0ca835ceef280ed9
+size 385

@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1fa0dc08326b97cab5b0525959039b7c8b5dc7f2d8bb34f7045c7089b02a4591
-size 525
+package com.mogul.demo.user.repository;
+
+import java.util.Optional;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import com.mogul.demo.user.entity.User;
+
+import jakarta.annotation.Nonnull;
+
+@Repository
+public interface UserRepository extends JpaRepository<User, Long> {
+
+	@Nonnull
+	Optional<User> findById(@Nonnull Long aLong);
+
+	@Nonnull
+	Optional<User> findByEmail(String email);
+}

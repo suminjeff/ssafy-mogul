@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3351ed12b39ef88659776785c0fba78f8f4286ddb367932c60c4ae67584d0c54
-size 410
+import Navbar from "@/components/navbar/Navbar";
+import BoardList from "./[id]/BoardList";
+
+export default function Board() {
+  return (
+    <div>
+      <Navbar />
+      <div
+        className="justify-center items-center"
+        style={{ backgroundColor: "#DED0B6" }}
+      >
+        <div className="mx-auto" style={{ maxWidth: "85%" }}>
+          <BoardList />
+        </div>
+      </div>
+    </div>
+  );
+}

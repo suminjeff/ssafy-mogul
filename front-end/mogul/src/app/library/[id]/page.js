@@ -1,11 +1,12 @@
 import Navbar from "@/components/navbar/Navbar";
+import LibraryIndividual from "./LibraryIndividual";
 
-export default function LibraryDetail() {
+export default function LibraryDetail({ params }) {
   return (
     <div>
       <div>
         <Navbar />
-        서재 상세조회 페이지
+        <LibraryIndividual userId={params.id} />
       </div>
     </div>
   );

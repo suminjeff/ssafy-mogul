@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:499d1eb2b7cd0e88fd3ce64873d25e008f95acf6680aba17072fbfe494306192
-size 503
+package com.mogul.demo.webtoon.repository;
+
+import com.mogul.demo.webtoon.entity.WebtoonCountEntity;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import java.util.List;
+import java.util.Optional;
+
+@Repository
+public interface WebtoonCountRepository extends JpaRepository<WebtoonCountEntity, Long> {
+    List<WebtoonCountEntity> findAllByIsDeletedFalseOrderByCount(Pageable pageable);
+}

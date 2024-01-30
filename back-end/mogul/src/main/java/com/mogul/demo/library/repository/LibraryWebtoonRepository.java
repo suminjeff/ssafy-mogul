@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b66caadb5b097306129417bb9ed389eed8caef41c9f3adc42ff1ebc34c1ac31d
-size 391
+package com.mogul.demo.library.repository;
+
+import com.mogul.demo.library.entity.LibraryWebtoonEntity;
+import com.mogul.demo.library.entity.LibraryWebtoonPK;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface LibraryWebtoonRepository extends JpaRepository<LibraryWebtoonEntity, LibraryWebtoonPK> {
+}

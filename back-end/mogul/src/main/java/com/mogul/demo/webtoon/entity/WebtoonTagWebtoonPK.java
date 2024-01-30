@@ -1,4 +1,4 @@
-package com.mogul.demo.library.entity;
+package com.mogul.demo.webtoon.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -9,7 +9,7 @@ import java.io.Serializable;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class LibrarySubscriptionThumbnailPK implements Serializable {
+public class WebtoonTagWebtoonPK implements Serializable {
     private long id;
-    private long userId;
+    private long tagId;
 }

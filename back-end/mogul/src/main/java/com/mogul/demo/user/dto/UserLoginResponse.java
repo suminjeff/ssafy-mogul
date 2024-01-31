@@ -1,18 +1,3 @@
-package com.mogul.demo.user.dto;
-
-import com.google.gson.Gson;
-
-import lombok.Getter;
-import lombok.RequiredArgsConstructor;
-
-@RequiredArgsConstructor
-@Getter
-public class UserLoginResponse {
-	private final int statusCode;
-	private final String statusMessage;
-	private final String message;
-
-	public String toJson() {
-		return new Gson().toJson(this);
-	}
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:fbbbd734fe4984c86e46c829273456c0a83ee277d711c437f0d473af9255cc4e
+size 194

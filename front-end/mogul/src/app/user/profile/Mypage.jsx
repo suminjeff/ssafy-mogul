@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9609c573bc705f73046165627acea02d80ada487aa8fe52a6e131f57c9895558
-size 681
+import React from "react";
+import ProfileImage from "./ProfileImage";
+import ProfileInfo from "./ProfileInfo";
+
+export default function Mypage() {
+  return (
+    <div>
+      <div className="grid grid-cols-2 ">
+        <div className="col-span-1 flex items-center justify-center">
+          <ProfileImage />
+        </div>
+        <div className="col-span-1 flex items-center justify-center">
+          <ProfileInfo />
+        </div>
+      </div>
+    </div>
+  );
+}

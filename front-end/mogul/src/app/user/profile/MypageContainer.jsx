@@ -1,11 +1,12 @@
 import Mypage from "./Mypage";
-import Myactivity from "./Myactivity";
+
+import MyActivityPage from "./MyActivityPage";
 
 export default function MypageContainer() {
   return (
     <div>
       <Mypage />
-      <Myactivity />
+      <MyActivityPage />
     </div>
   );
 }

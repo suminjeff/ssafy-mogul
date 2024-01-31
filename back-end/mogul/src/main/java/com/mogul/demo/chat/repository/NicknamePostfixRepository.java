@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:88e9000a8f60cad69088445f929a8c6547518b67de8e4ec8484f62bfd6a065c6
-size 369
+package com.mogul.demo.chat.repository;
+
+import com.mogul.demo.chat.entity.NicknamePostfixEntity;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface NicknamePostfixRepository extends JpaRepository<NicknamePostfixEntity, Long> {
+    NicknamePostfixEntity findOneById(Long id);
+}

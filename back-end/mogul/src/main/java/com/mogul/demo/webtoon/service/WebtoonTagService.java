@@ -1,14 +1,3 @@
-package com.mogul.demo.webtoon.service;
-
-
-import com.mogul.demo.webtoon.dto.WebtoonResponse;
-import com.mogul.demo.webtoon.dto.WebtoonTagResponse;
-
-import java.util.List;
-
-public interface WebtoonTagService {
-
-    List<WebtoonTagResponse> findTag(long webtoonId);
-
-    List<WebtoonResponse> findWebtoonByTagId(long tagId);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ea1464f0b7357cab3814af53ae2ecf87e803611acd4d5465dcb99f1eedee2b28
+size 325

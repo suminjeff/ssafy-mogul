@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a060a0e2874fa8c6b399d0c0385d18b3b8d10eb92987e3a8ae97077d93761da5
-size 493
+package com.mogul.demo.board.repository;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import com.mogul.demo.board.entity.Article;
+
+@Repository
+public interface ArticleRepository extends JpaRepository<Article,Long> {
+
+	Optional<Article> findArticleById(Long id);
+	List<Article> findAllByIsDeletedFalse(Pageable pageable);
+
+}

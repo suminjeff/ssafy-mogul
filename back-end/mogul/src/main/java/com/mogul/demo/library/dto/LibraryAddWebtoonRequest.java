@@ -1,21 +1,3 @@
-package com.mogul.demo.library.dto;
-
-import jakarta.validation.constraints.Min;
-import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.Size;
-import lombok.*;
-
-@Getter
-@Setter
-@NoArgsConstructor
-@AllArgsConstructor
-@ToString
-public class LibraryAddWebtoonRequest {
-
-    private long id;
-
-    @NotNull(message = "웹툰 아이디를 입력해 주세요")
-    @Min(value = 1L, message = "웹툰 아이디는 1이상 이어야 합니다.")
-    private long webtoonId;
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0f41b73de7c44fac9bf8e8a4b0206177f25a6eafdcf02177b1b43aa25061afc0
+size 496

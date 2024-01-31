@@ -1,18 +1,3 @@
-import Navbar from "@/components/navbar/Navbar"
-import WebtoonWrapper from "@/components/webtoon/WebtoonWrapper";
-
-export default async function WebtoonAll() {
-  const pno = 1;
-  const count = 10;
-  const response = await fetch(`http://i10a206.p.ssafy.io:8080/webtoon/all?pno=${pno}&count=${count}`);
-  const webtoons = await response.json();
-  return (
-    <div>
-      <Navbar/>
-      <div>
-        <h1>전체 웹툰</h1>
-        <WebtoonWrapper webtoons={webtoons} />
-      </div>
-    </div>
-  )
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:72ed9051efabbad2fcac32834da0604e3119261fb9c6f685bc318f8b7c4028f7
+size 528

@@ -1,14 +1,3 @@
-package com.mogul.demo.board.dto;
-
-import java.time.LocalDateTime;
-
-import com.mogul.demo.user.dto.UserResponse;
-
-import lombok.Data;
-
-@Data
-public class ArticleReadResponse extends ArticleResponse{
-	private Integer hit;
-	private LocalDateTime editedDate;
-	private UserResponse user;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:771d3f2ea396ceca43d2e42daea682a864447780e6b06e8ed2fcdb14208a6f4d
+size 286

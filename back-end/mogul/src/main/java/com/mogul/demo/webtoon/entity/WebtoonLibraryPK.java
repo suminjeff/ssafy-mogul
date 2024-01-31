@@ -1,13 +1,3 @@
-package com.mogul.demo.webtoon.entity;
-
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
-import java.io.Serializable;
-
-@Data
-@NoArgsConstructor
-public class WebtoonLibraryPK implements Serializable {
-    private long libraryId;
-    private long webtoonId;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f206a9de2b478f22472d1f7e672a101d39451c431afc0f2a5fc87af15862c9ad
+size 263

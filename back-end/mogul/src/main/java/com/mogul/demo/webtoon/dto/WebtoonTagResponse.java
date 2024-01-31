@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b8f75e7c46b4025ce8bc0255cca941b612bd3c0c3ce27890b9f809a6afe17de1
-size 256
+package com.mogul.demo.webtoon.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class WebtoonTagResponse {
+
+    private Long tagId;
+    private String tag;
+
+}

@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:95d37a4bcefe051a0d987eb2c1dae61ce710895bcfa87b6310023ea6c4d4b90d
-size 311
+package com.mogul.demo.webtoon.entity;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.io.Serializable;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class WebtoonLikePK implements Serializable {
+    private Long webtoonId;
+    private Long userId;
+}

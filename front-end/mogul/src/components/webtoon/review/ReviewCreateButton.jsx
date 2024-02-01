@@ -1,17 +1,3 @@
-"use client"
-import React from 'react';
-
-function ReviewCreateButtonRoot() {
-  return(
-    <button
-    className="hover:text-white text-black font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-    style={{
-      backgroundColor: "#DED0B6",
-    }}
-    >
-      리뷰 쓰기
-    </button>
-  )
-}
-
-export default ReviewCreateButtonRoot;
+version https://git-lfs.github.com/spec/v1
+oid sha256:bca655395bc675738718c5e7bf3b8c602f32225d70efdf5074799c4b538a9889
+size 637

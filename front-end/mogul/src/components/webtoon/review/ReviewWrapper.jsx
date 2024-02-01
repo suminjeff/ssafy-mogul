@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:afcba531b20bde68ebf12626ad60439193ef673a0e2aad27ca45a07319b5af3f
-size 698
+import ReviewCard from './ReviewCard';
+
+function ReviewWrapper({ reviews }) {
+    return (
+      <div className='mx-10 my-20'>
+        <div className='grid grid-cols-5 gap-10 mx-10'>
+          {reviews.map((review, index) => (
+            <ReviewCard key={index} review={review}/>
+          ))}
+        </div>
+      </div>
+    );
+}
+
+export default ReviewWrapper;

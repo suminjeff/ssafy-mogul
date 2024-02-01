@@ -1,14 +1,3 @@
-package com.mogul.demo.user.dto;
-
-import jakarta.validation.constraints.NotNull;
-import lombok.Getter;
-import lombok.RequiredArgsConstructor;
-
-@RequiredArgsConstructor
-@Getter
-public class UserLoginRequest {
-	@NotNull
-	private final String username; //email
-	@NotNull
-	private final String password;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:96b8f6f95debef8e00ec37b3500246e546041e684a2bde8cc3c269c4abb803e3
+size 299

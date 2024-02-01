@@ -1,13 +1,3 @@
-import Navbar from "@/components/navbar/Navbar";
-import LibraryIndividual from "./LibraryIndividual";
-
-export default function LibraryDetail({ params }) {
-  return (
-    <div>
-      <div>
-        <Navbar />
-        <LibraryIndividual userId={params.id} />
-      </div>
-    </div>
-  );
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:cbae5244b60db64b18da99207125c01120e1c6c545b29fb04479f852ab556975
+size 391

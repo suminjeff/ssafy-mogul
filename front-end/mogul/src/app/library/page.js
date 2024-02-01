@@ -1,11 +1,11 @@
 import Navbar from "@/components/navbar/Navbar";
-import LibraryPopular from "./LibraryPopular";
+import BackgroundTest from "./BackgroundTest";
 
 export default function Library() {
   return (
     <div>
       <Navbar />
-      <LibraryPopular />
+      <BackgroundTest />
     </div>
   );
 }

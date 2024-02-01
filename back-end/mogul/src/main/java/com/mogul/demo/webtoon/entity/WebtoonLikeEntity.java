@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:147c06a866f1a7727dd10b39cad253545a18d6ce0f40e67159ba0c0939761d7e
-size 441
+package com.mogul.demo.webtoon.entity;
+
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Entity
+@Table(name = "webtoon_like")
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@IdClass(WebtoonLikePK.class)
+public class WebtoonLikeEntity {
+
+    @Id
+    @Column(name = "webtoon_id")
+    private Long webtoonId;
+
+    @Id
+    @Column(name = "user_id")
+    private Long userId;
+
+}

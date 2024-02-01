@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a128ff1d7f79342e281c776b7681e6bbbb0c1555223d66435880905006303212
-size 235
+package com.mogul.demo.board.dto;
+
+import java.time.LocalDateTime;
+
+import com.mogul.demo.user.dto.UserResponse;
+
+import io.swagger.v3.oas.annotations.media.Schema;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+
+@Data
+@EqualsAndHashCode(callSuper=false)
+@Schema(description = "Article Read Response")
+public class ArticleReadResponse extends ArticleResponse{
+	private Integer hit;
+	private LocalDateTime editedDate;
+	private UserResponse user;
+
+}

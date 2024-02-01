@@ -1,15 +1,3 @@
-import React from 'react';
-import ReviewCard from './ReviewCard';
-
-function ReviewWrapper({ reviews }) {
-  
-    return (
-      <div className='grid grid-cols-5 gap-10 mx-10'>
-        {reviews.map((review, index) => (
-          <ReviewCard key={index} review={review}/>
-        ))}
-      </div>
-    );
-}
-
-export default ReviewWrapper;
+version https://git-lfs.github.com/spec/v1
+oid sha256:004806816381a60164e0b259aa09a6cb615b683e01615e73de43a879542f85c4
+size 362

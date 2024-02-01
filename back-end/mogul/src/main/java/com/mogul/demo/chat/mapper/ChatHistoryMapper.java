@@ -1,14 +1,3 @@
-package com.mogul.demo.chat.mapper;
-
-import com.mogul.demo.chat.document.ChatMessageDocument;
-import com.mogul.demo.chat.dto.ChatHistoryResponse;
-import org.mapstruct.Mapper;
-
-@Mapper
-public interface ChatHistoryMapper {
-
-    public static ChatHistoryMapper INSTANCE = new ChatHistoryMapperImpl();
-
-
-    ChatHistoryResponse fromChatMessageDocumentToChatistoryResponse(ChatMessageDocument chatMessageDocument);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f6c145242cdafc0a22e138735f440de0784270e51123a99c1b350f0a1be991b3
+size 412

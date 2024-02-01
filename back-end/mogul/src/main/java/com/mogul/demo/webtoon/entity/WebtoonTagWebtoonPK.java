@@ -1,15 +1,3 @@
-package com.mogul.demo.webtoon.entity;
-
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
-import java.io.Serializable;
-
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
-public class WebtoonTagWebtoonPK implements Serializable {
-    private Long id;
-    private Long tagId;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:169eac3f25590a94e21ff33752159c94905b10a45d424938b357d5bf9fa73d47
+size 309

@@ -1,13 +1,3 @@
-package com.mogul.demo.board.dto;
-
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-
-@Data
-@EqualsAndHashCode(callSuper=false)
-public class CommentCreateRequest extends CommentRequest{
-	private int group;
-	// 댓글이 어디 그룹인지
-	// id와 group이 같으면 부모댓글
-	// 아니면 자식 댓글
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:936598f26dfa51ca4f9db27d762d9bc9eb1b77c9e701c55353a479edcd362e1d
+size 315

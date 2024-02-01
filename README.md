@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fb1445b4b2d7282099ba89dddff93f755c26ede06211f41bbefb5840ffe13369
-size 305
+
+24/01/31 밤
+
+충돌가능성 때문에 merge request는 내일 요청할게요
+(fe-develop에서 브랜치를 새로 만들고 개발하는데 이번에는 실수로 브랜치를 먼저 못 파고 수정한 뒤에 브랜치를 새로 파고 addcommitpush 했는데
+혹시 이게 문제가 생길까봐)

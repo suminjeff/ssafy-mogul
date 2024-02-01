@@ -1,6 +1,6 @@
 "use client";
 
-import NormalLogin from "./NormalLogin";
+import NormalLogin from "./LoginForm";
 
 export default function Form() {
   return (

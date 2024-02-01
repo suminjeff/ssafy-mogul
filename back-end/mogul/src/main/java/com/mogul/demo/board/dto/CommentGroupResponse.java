@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5fe2d36172bd8d0f8eb9fa91a5cd26a0fc207b5652f1dbfc0665102a297a3ced
-size 274
+package com.mogul.demo.board.dto;
+
+import java.util.List;
+
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+
+@Data
+@EqualsAndHashCode(callSuper=false)
+public class CommentGroupResponse extends CommentReadResponse {
+	List<CommentReadResponse> children; // 자식개체
+}

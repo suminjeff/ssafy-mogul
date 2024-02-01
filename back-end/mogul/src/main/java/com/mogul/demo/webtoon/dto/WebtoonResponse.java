@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c5384d040a5cb2f818e5bf55018127372a99b0a09769e3157f4a549615f20554
-size 342
+package com.mogul.demo.webtoon.dto;
+
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
+@NoArgsConstructor
+public class WebtoonResponse {
+    private Long id;
+    private String title;
+    private String author;
+    private String genre;
+    private String platform;
+    private String thumbnail;
+}

@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cfb6c48727d74565ba051d22b320a1855a64fb49e046e49f40338378c9d64d62
-size 336
+package com.mogul.demo.chat.dto;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.*;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@ToString
+@EqualsAndHashCode
+public class MessageResponse {
+
+    @JsonProperty("writer")
+    private String nickname;
+
+    @JsonProperty("msg")
+    private String message;
+
+}

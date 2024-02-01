@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a8fdf1fd08f6f1c144c21fbb832236cffd297dcb1c22e2cc524e298d23a984d2
-size 304
+package com.mogul.demo.webtoon.service;
+
+import com.mogul.demo.webtoon.dto.WebtoonLikeResponse;
+
+public interface WebtoonLikeService {
+
+    WebtoonLikeResponse getLike(Long webtoonId, Long userId);
+
+    boolean addLike(Long webtoonId, Long userId);
+
+    boolean removeLike(Long webtoonId, Long userId);
+}

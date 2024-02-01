@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a604de915d76f61a364e036ffb50d7c980c661740b97dafbf0229a2f5f7a2603
-size 442
+package com.mogul.demo.board.dto;
+
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
+import lombok.Data;
+
+@Data
+public class ArticleRequest {
+	@NotBlank(message = "제목은 비어있을 수 없습니다.")
+	@Size(max = 255,message = "제목은 255자를 초과할 수 없습니다.")
+	private String title;
+
+	@NotBlank(message = "내용은 비어있을 수 없습니다")
+	private String content;
+}

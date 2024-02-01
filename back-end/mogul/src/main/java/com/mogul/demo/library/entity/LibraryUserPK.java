@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4580ad60790e6d2296e669c6fa5c64c7b8692d1da1ec3ea48ec2c4ee4dbbf61c
-size 311
+package com.mogul.demo.library.entity;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.io.Serializable;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class LibraryUserPK implements Serializable {
+    private Long libraryId;
+    private Long userId;
+}

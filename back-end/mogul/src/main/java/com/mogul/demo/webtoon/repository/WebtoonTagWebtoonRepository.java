@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a3637de3f455c1f32df6c06a471e1187edb594790ed32a5189bd3ab480404a2f
-size 507
+package com.mogul.demo.webtoon.repository;
+
+import com.mogul.demo.webtoon.entity.WebtoonTagWebtoonPK;
+import com.mogul.demo.webtoon.entity.WebtoonTagWebtoonEntity;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import java.util.List;
+
+@Repository
+public interface WebtoonTagWebtoonRepository extends JpaRepository<WebtoonTagWebtoonEntity, WebtoonTagWebtoonPK> {
+
+    List<WebtoonTagWebtoonEntity> findByTagIdAndIsDeletedFalse(Long tagId);
+}

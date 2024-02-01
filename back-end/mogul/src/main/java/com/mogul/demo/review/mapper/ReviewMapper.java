@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:97f214155423c8235c990b6c992aceb8b45a26ff8b50061c2c6de99204987a50
-size 498
+package com.mogul.demo.review.mapper;
+
+import com.mogul.demo.review.dto.ReviewAddRequest;
+import com.mogul.demo.review.dto.ReviewResponse;
+import com.mogul.demo.review.entity.ReviewEntity;
+import org.mapstruct.Mapper;
+
+@Mapper
+public interface ReviewMapper {
+
+    public static ReviewMapper INSTANCE = new ReviewMapperImpl();
+
+    ReviewResponse fromReviewEntityToReivewResponse(ReviewEntity reviewEntity);
+
+    ReviewEntity fromReviewAddRequestToReviewEntity(ReviewAddRequest reviewAddRequest);
+}

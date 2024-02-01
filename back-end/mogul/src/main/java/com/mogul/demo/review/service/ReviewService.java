@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3c5498d386335048a6962f8077c2d9481705d0ed2e29f44a750950f939c95255
-size 512
+package com.mogul.demo.review.service;
+
+import com.mogul.demo.review.dto.ReviewAddRequest;
+import com.mogul.demo.review.dto.ReviewResponse;
+import com.mogul.demo.review.dto.ReviewUpdateRequest;
+
+import java.util.List;
+
+public interface ReviewService {
+    List<ReviewResponse> findReviewsByWebtoonId(Long webtoonId, int pageNumber, int pageSize);
+
+    boolean addReview(ReviewAddRequest reviewAddRequest);
+
+    boolean modifyReview(ReviewUpdateRequest reviewUpdateRequest);
+
+    boolean removeReview(Long id);
+}

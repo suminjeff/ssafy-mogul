@@ -1,18 +1,3 @@
-"use client";
-import NormalSignup from "./SignupForm";
-
-export default function Form() {
-  return (
-    <div>
-      {/* <Signup /> */}
-      <div className="flex flex-col items-center justify-center h-screen">
-        <div class="text-4xl font-bold mb-8 text-center">
-          회원 정보를 입력해주세요.
-        </div>
-        <div className="mb-2">
-          <NormalSignup />
-        </div>
-      </div>
-    </div>
-  );
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d42eb2906d362dc106ff12dfd08ff4dbba1b882ea315e1a0caf779558ecacc96
+size 479

@@ -1,19 +1,3 @@
-"use client";
-
-import NormalLogin from "./LoginForm";
-
-export default function Form() {
-  return (
-    <div>
-      {/* <login /> */}
-      <div className="flex flex-col items-center justify-center h-screen">
-        <div div class="text-4xl font-bold mb-8 text-center">
-          <div className="signup_text">mogul에 로그인하세요.</div>
-        </div>
-        <div className="mb-2">
-          <NormalLogin />
-        </div>
-      </div>
-    </div>
-  );
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:27bd2de9fc3a7a1a32acf1523db7934c532c8a12e0b2d0ca94338b3b39674390
+size 519

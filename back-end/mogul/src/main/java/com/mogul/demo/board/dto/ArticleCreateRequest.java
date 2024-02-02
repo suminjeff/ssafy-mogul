@@ -1,15 +1,3 @@
-package com.mogul.demo.board.dto;
-
-
-import com.mogul.demo.user.dto.UserRequest;
-
-import jakarta.validation.constraints.Min;
-import jakarta.validation.constraints.NotNull;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-
-@Data
-@EqualsAndHashCode(callSuper=false)
-public class ArticleCreateRequest extends ArticleRequest{
-	private UserRequest user; // 게시글 작성자
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:05f1aa9f9ba47f3a520b02652d277bcf65ebd1949b83b2c816dec818fd6d12ce
+size 377

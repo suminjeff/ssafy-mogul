@@ -1,17 +1,3 @@
-package com.mogul.demo.library.dto;
-
-import jakarta.validation.constraints.Min;
-import jakarta.validation.constraints.NotNull;
-import lombok.*;
-
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
-public class SubscriptionCancelRequest {
-
-    @NotNull(message = "서재 식별자는 비어 있을 수 없습니다.")
-    @Min(value = 1, message = "서재 식별자는 1이상이어야 합니다.")
-    private Long libraryId;
-
-    private Long userId;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:03ea9bed2bcb4af7bea148e5b1c1345e133f50d1a86001a2d22c567af1c98913
+size 447

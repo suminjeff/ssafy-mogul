@@ -1,22 +1,3 @@
-package com.mogul.demo.webtoon.entity;
-
-import jakarta.persistence.*;
-import lombok.*;
-
-@Entity
-@Table(name = "webtoon_webtoon_tag")
-@Getter
-@Setter
-@NoArgsConstructor
-@AllArgsConstructor
-@ToString
-@IdClass(WebtoonWebtoonTagPK.class)
-public class WebtoonWebtoonTagEntity {
-    @Id
-    @Column(name = "webtoon_id", nullable = false)
-    private Long webtoonId;
-
-    @Id
-    @Column(name = "webtoon_tag_id",nullable = false)
-    private Long tagId;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5cd42096bf198317d332595805dc12d99081509f6e9ad1f1e39f5095a84cc7f2
+size 449

@@ -8,7 +8,7 @@ export default function LibraryDetail({ params }) {
       <div>
         <Navbar />
         {/* <LibraryIndividual userId={params.id} /> */}
-        <BackgroundTest userId={params.id} />
+        <BackgroundTest libraryId={params.id} />
       </div>
     </div>
   );

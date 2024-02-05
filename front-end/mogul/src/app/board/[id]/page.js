@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:25c393db0a84b7fb36dbe221cdae6d513194899dd6befe0a8678c578346d36b1
-size 385
+import BoardList from "./BoardList";
+import Navbar from "@/components/navbar/Navbar";
+import BoardPaginaiton from "./BoardPagination";
+import BackgroundTest from "./BackgroundTest";
+
+export default function BoardDetail({ params }) {
+  return (
+    <div>
+      <Navbar />
+      <div className="text-center">
+        <BackgroundTest listNum={params.id} />
+      </div>
+    </div>
+  );
+}

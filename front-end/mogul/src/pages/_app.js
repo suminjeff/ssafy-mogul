@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:07ae6795dfac4eee203e98f53e0808288a95eac24c738b7d33344c35689b0a27
-size 238
+import { config } from '@fortawesome/fontawesome-svg-core'
+import '@fortawesome/fontawesome-svg-core/styles.css'
+config.autoAddCss = false
+
+export default function App({ Component, pageProps }) {
+  return <Component {...pageProps} />;
+};

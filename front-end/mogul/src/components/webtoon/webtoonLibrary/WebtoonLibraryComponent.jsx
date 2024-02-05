@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1b79140b9b7c2f2992af83889fa21e5dfeb38432e9a2c0790039997831d7b145
-size 259
+export default function WebtoonLibraryComponent(){
+  return (
+    <div class="truncate cursor-pointer shadow-md rounded-2xl px-8 pt-6 pb-8 mb-4" style={{
+      backgroundColor: "white",
+      height: "200px",
+      width: "200px",
+    }}>테스트</div>
+  )
+}

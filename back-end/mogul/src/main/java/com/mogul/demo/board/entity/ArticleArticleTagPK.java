@@ -1,21 +1,3 @@
-package com.mogul.demo.board.entity;
-
-import java.io.Serializable;
-
-import jakarta.persistence.Column;
-import jakarta.persistence.Embeddable;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-
-@Getter
-@NoArgsConstructor
-@AllArgsConstructor
-@Embeddable
-public class ArticleArticleTagPK implements Serializable {
-
-	@Column(name = "article_id")
-	private Long articleId;
-	@Column(name= "article_tag_id")
-	private Long articleTagId;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:9664d27f98948b04a1d8fd880bb8455dd07d90d2a41d245b292cad47be783893
+size 469

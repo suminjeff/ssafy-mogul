@@ -1,22 +1,3 @@
-package com.mogul.demo.review.dto;
-
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-
-import java.util.Date;
-
-@Getter
-@Setter
-@NoArgsConstructor
-public class ReviewResponse {
-    private Long id;
-    private Long userId;
-    private String title;
-    private String content;
-    private Date registeredDate;
-    private Integer drawingScore;
-    private Integer directingScore;
-    private Integer storyScore;
-    
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:724fbbfa3b470581856b5e98d0849cd16387b04163fffc0af5711e83ade3dc14
+size 474

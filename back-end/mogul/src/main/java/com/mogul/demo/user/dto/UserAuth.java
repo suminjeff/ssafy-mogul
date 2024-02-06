@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:03ebd0b39223eab219b8142396577856ae9d0cd8626453671efc160bd96e44b9
-size 244
+package com.mogul.demo.user.dto;
+
+import com.mogul.demo.user.role.Role;
+
+import lombok.Getter;
+import lombok.RequiredArgsConstructor;
+
+@RequiredArgsConstructor
+@Getter
+public class UserAuth {
+	private final Long id;
+	private final Role role;
+}

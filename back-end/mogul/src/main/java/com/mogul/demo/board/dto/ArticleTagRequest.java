@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a17316671225db0c7b7d4f18444e183df013c2c9b7b859f47ab78ec335c81193
-size 359
+package com.mogul.demo.board.dto;
+
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
+import lombok.Data;
+
+@Data
+public class ArticleTagRequest {
+	@NotBlank(message = "태그는 비어있을 수 없습니다")
+	@Size(max = 10,message = "태그의 길이는 10자를 초과할 수 없습니다")
+	private String tag;
+}

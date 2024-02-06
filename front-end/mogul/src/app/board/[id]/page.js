@@ -8,7 +8,7 @@ export default function BoardDetail({ params }) {
     <div>
       <Navbar />
       <div className="text-center">
-        <BackgroundTest boardId={params.id} />
+        <BackgroundTest listNum={params.id} />
       </div>
     </div>
   );

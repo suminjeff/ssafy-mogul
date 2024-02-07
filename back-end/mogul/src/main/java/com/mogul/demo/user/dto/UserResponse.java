@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:10be3285a2a5aeea27164914c00fa81cdef2bd8585d841cc353208d24d431cce
-size 245
+package com.mogul.demo.user.dto;
+
+import lombok.Getter;
+import lombok.RequiredArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
+@RequiredArgsConstructor
+public class UserResponse {
+	private final Long id;
+	private final String nickname;
+}

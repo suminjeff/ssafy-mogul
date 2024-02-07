@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:943cdb24a1b5b86304cd35fdba6065556ca547b9102f6df41437285505c8f66d
-size 379
+/** @type {import('next').NextConfig} */
+const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
+const nextConfig = {
+  reactStrictMode: true,
+  images: {
+    domains: ["www.kmas.or.kr"],
+  },
+  // async rewrites() {
+  //   return [
+  //     {
+  //       source: `/api/user/signup`,
+  //       destination: `/api/user/login`,
+  //     },
+  //   ];
+  // }
+};
+
+export default nextConfig;

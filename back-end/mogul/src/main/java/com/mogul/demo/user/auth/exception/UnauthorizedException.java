@@ -1,13 +1,3 @@
-package com.mogul.demo.user.auth.exception;
-
-public class UnauthorizedException extends RuntimeException {
-	private static final String DEFAULT_MESSAGE = "인가되지 않은 요청입니다.";
-
-	public UnauthorizedException() {
-		super(DEFAULT_MESSAGE);
-	}
-
-	public UnauthorizedException(String s) {
-		super(s);
-	}
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:7081eeded769afbccdcca38d2385f94af52ea4c3a5ad16eacbf202b7a049eebc
+size 318

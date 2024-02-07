@@ -1,4 +1,5 @@
 import MyLibraryList from "./MyLibraryList";
+import LibraryList from "./[id]/LibraryList";
 
 export default function BackgroundTest() {
   return (

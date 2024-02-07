@@ -1,13 +1,3 @@
-package com.mogul.demo.user.service;
-
-import com.mogul.demo.user.dto.UserInfoReadResponse;
-import com.mogul.demo.user.dto.UserInfoSetRequest;
-import com.mogul.demo.user.vo.UserVo;
-
-public interface ProfileService {
-	//내가 쓴 리뷰
-
-	UserInfoReadResponse getUserInfoById(Long id);
-
-	UserVo setUserInfo(UserInfoSetRequest userInfoSetRequest);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:16d3514d9304f93d73c7082b3b4cd98668ecc5dfd529804db8e0db43515aa707
+size 351

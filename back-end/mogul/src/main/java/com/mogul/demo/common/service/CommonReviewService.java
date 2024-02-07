@@ -1,14 +1,3 @@
-package com.mogul.demo.common.service;
-
-import com.mogul.demo.common.dto.LibraryDetailResponse;
-import com.mogul.demo.review.dto.ReviewAddRequest;
-import com.mogul.demo.review.dto.ReviewUpdateRequest;
-import com.mogul.demo.util.CustomResponse;
-
-public interface CommonReviewService {
-    CustomResponse addReview(Long webtoonId, ReviewAddRequest reviewAddRequest);
-
-    boolean modifyReview(ReviewUpdateRequest reviewUpdateRequest);
-
-    boolean removeReview(Long id);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:af620fe006e4848ff44b1cfbc13e4bafe820fbc41d44a5d3ffb91a85206ed7b0
+size 614

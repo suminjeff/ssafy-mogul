@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9ae79c27cf92f917480738ef22cab41c2f2123409ea24be7c3406fd3b4e5adc8
-size 406
+package com.mogul.demo.webtoon.repository;
+
+import com.mogul.demo.webtoon.entity.WebtoonWebtoonTagEntity;
+import com.mogul.demo.webtoon.entity.WebtoonWebtoonTagPK;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface WebtoonWebtoonTagRepository extends JpaRepository<WebtoonWebtoonTagEntity, WebtoonWebtoonTagPK> {
+}

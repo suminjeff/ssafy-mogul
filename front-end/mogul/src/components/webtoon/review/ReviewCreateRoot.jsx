@@ -1,16 +1,3 @@
-"use client"
-import { React, useState } from 'react';
-import ReviewCreateButton from './ReviewCreateButton';
-
-function ReviewCreateRoot() {
-  return (
-    <div className='flex justify-between mx-20'>
-      <p className='text-6xl font-semibold'>
-        리뷰
-      </p>
-      <ReviewCreateButton />
-    </div>
-  )
-}
-
-export default ReviewCreateRoot;
+version https://git-lfs.github.com/spec/v1
+oid sha256:9d1ad48026dc9aaa983e1c5ffa37819d290044af07975415038c9bc5a5cb1dd6
+size 918

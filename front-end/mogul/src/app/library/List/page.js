@@ -1,7 +1,9 @@
 import Navbar from "@/components/navbar/Navbar";
 import BackgroundTest from "./BackgroundTest";
 
-export default async function MyLibraryLists() {
+export const dynamic = "force-dynamic";
+
+export default function MyLibraryLists() {
   return (
     <div>
       <div>

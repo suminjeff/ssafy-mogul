@@ -1,7 +1,7 @@
 import Navbar from "@/components/navbar/Navbar";
 import BackgroundTest from "./BackgroundTest";
 
-export default function LibraryList({ params }) {
+export default async function LibraryList({ params }) {
   return (
     <div>
       <div>

@@ -5,11 +5,11 @@ import ProfileInfo from "./ProfileInfo";
 export default function Mypage() {
   return (
     <div>
-      <div className="grid grid-cols-2 ">
+      <div className="grid grid-cols-4 ">
         <div className="col-span-1 flex items-center justify-center">
           <ProfileImage />
         </div>
-        <div className="col-span-1 flex items-center justify-center">
+        <div className="col-span-3 ml-16 flex items-center ">
           <ProfileInfo />
         </div>
       </div>

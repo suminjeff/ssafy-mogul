@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:eede26b6b13bb36ef67bd2778d890b94e70318537fdfd5c940c8bbc1a6c9191f
-size 522
+"use client"
+import Image from "next/image";
+import { useState } from "react";
+import WebtoonLibraryComponent from "./WebtoonLibraryComponent";
+
+function WebtoonLibraryWrapper({ libraries }) {
+  return (
+    <div className="grid grid-cols-5 mx-20 mt-10">
+    {libraries &&
+      libraries
+        .slice()
+        .reverse()
+        .map((h, index) => (
+          <WebtoonLibraryComponent key={index} h={h}/>
+        ))}
+  </div>
+  );
+}
+
+
+export default WebtoonLibraryWrapper;

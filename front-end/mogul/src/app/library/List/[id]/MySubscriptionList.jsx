@@ -1,7 +1,3 @@
-import React from "react";
-
-const MySubscription = () => {
-  return <div>내가 구독하고 있는 서재들 리스트입니다.</div>;
-};
-
-export default MySubscription;
+version https://git-lfs.github.com/spec/v1
+oid sha256:36793139892c873902f430da35bd765a4b398da12893a2cbc0f9f9b99dbe910e
+size 172

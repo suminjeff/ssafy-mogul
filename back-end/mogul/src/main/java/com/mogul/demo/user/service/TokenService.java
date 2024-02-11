@@ -1,17 +1,3 @@
-package com.mogul.demo.user.service;
-
-import com.mogul.demo.user.auth.token.AuthToken;
-
-public interface TokenService {
-	/*
-	 * todo
-	 * 1. 토큰 넣기 userId: tokenString
-	 * 2. 토큰 만료 기간 설정
-	 * 3. userId로 토큰 찾기
-	 */
-
-	void insert(AuthToken token);
-
-	String findById(Long id);
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:64c096bb60b9fe77ce7c8dd617c87670095de7a7d1a29c05fcc5468bfa33596d
+size 308

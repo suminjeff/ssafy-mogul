@@ -1,14 +1,3 @@
-package com.mogul.demo.board.dto;
-
-import com.mogul.demo.user.dto.UserResponse;
-
-import io.swagger.v3.oas.annotations.media.Schema;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-
-@Data
-@EqualsAndHashCode(callSuper=false)
-@Schema(description = "Comment Read Response")
-public class CommentReadResponse extends CommentResponse{
-	private UserResponse user;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ff58ed159bfc6519421d7e63af76e3e5aaac95383927e8dbed076c63d49bc5e7
+size 397

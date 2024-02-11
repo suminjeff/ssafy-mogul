@@ -6,11 +6,9 @@ const nextConfig = {
   //   domains: ["www.kmas.or.kr"],
   // },
   images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "**",
-      },
+    domains: [
+      "www.kmas.or.kr",
+      "dn-img-page.kakao.com",
     ],
   },
   // async rewrites() {

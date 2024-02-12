@@ -1,23 +1,3 @@
-package com.mogul.demo.user.dto;
-
-import org.hibernate.validator.constraints.Length;
-
-import jakarta.validation.constraints.Email;
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.Pattern;
-import lombok.Getter;
-import lombok.Setter;
-
-@Getter
-@Setter
-public class UserInfoReadResponse {
-	@NotBlank
-	@Email
-	@Length(min = 1, max = 320)
-	private String email;
-
-	@NotBlank
-	@Pattern(regexp = "[가-힣A-Za-z0-9]{2,15}")
-	private String nickname;
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:38ff85e8df21bacd8a41cfa4c3d6f261c7e89ece71aebae17e8e2315938ed87b
+size 482

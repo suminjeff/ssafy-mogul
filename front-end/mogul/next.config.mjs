@@ -1,23 +1,3 @@
-/** @type {import('next').NextConfig} */
-const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
-const nextConfig = {
-  reactStrictMode: true,
-  images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "**",
-      },
-    ],
-  },
-  // async rewrites() {
-  //   return [
-  //     {
-  //       source: `/api/user/signup`,
-  //       destination: `/api/user/login`,
-  //     },
-  //   ];
-  // }
-};
-
-export default nextConfig;
+version https://git-lfs.github.com/spec/v1
+oid sha256:0853b89f2fbf99600b266aa4f6e117d334e05272fd76298303aec2c7872b659d
+size 643

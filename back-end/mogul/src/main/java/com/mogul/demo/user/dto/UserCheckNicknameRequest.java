@@ -1,17 +1,3 @@
-package com.mogul.demo.user.dto;
-
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.Pattern;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.RequiredArgsConstructor;
-
-
-@AllArgsConstructor
-@NoArgsConstructor
-@Getter
-public class UserCheckNicknameRequest {
-	@Pattern(regexp = "[가-힣A-Za-z0-9]{2,15}")
-	private String nickname;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:2efc328aa4f54bc9c1c255710e6a62ff226f896dacfa94a30db58f4925bcbc5c
+size 480

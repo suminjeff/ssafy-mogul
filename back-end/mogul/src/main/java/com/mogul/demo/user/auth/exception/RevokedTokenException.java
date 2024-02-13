@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e7ccfd56d268906b356c399ca27e070add525be1c29f00933e134fb7edf535ca
-size 329
+package com.mogul.demo.user.auth.exception;
+
+public class RevokedTokenException extends RuntimeException {
+	private static final String DEFAULT_MESSAGE = "로그아웃된 사용자입니다.";
+	
+	public RevokedTokenException() {
+		this(DEFAULT_MESSAGE);
+	}
+
+	public RevokedTokenException(String message) {
+		super(message);
+	}
+}

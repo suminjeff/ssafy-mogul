@@ -1,12 +1,3 @@
-import Navbar from "@/components/navbar/Navbar";
-
-export default async function SearchPage() {
-  return (
-    <div>
-      <div>
-        <Navbar />
-      </div>
-      <div className="text-center mt-20">검색페이지입니다.</div>
-    </div>
-  );
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:141043f62b1c2b60cd2f79c83c29b46e2897983c4c4bcd7e35d7a1239a07ec31
+size 251

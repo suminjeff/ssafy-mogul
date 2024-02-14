@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5863d5ae3de8a7a37e5152c55d0faed05f70624b7a7c84955cde006d1c9ae7d4
-size 242
+package com.mogul.demo.recommend.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class WebtoonInfo {
+	private long id;
+	private double score;
+}

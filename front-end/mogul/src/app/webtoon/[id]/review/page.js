@@ -1,7 +1,9 @@
 import Navbar from "@/components/navbar/Navbar";
 import Header from "@/components/webtoon/header/Header";
 import ReviewWrapperAll from "@/components/webtoon/review/ReviewWrapperAll";
-export default async function WebtoonReviewAll(props) {
+
+export default async function WebtoonReviewAll() {
+  
   return (
     <>
       <Navbar />

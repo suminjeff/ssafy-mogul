@@ -9,7 +9,7 @@ export default function Mypage() {
         <div className="col-span-1 flex items-center justify-center">
           <ProfileImage />
         </div>
-        <div className="col-span-3 ml-16 flex items-center ">
+        <div className="col-span-3  mt-12 ml-16 flex items-center ">
           <ProfileInfo />
         </div>
       </div>

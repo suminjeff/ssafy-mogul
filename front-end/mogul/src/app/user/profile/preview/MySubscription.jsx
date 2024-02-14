@@ -1,17 +1,3 @@
-export default function MySubscription(data) {
-  const activityData = data.data || [];
-  console.log(activityData);
-  return (
-    <>
-      {/* {activityData.map((library, index) => {
-        <tr key={index}>
-          <td>{library.id}</td>
-          <td>{library.title}</td>
-          <td>{library.writer}</td>
-          <td>{library.date}</td>
-          <td>{library.view}</td>
-        </tr>
-      })} */}
-    </>
-  );
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5919102013090b208eaab4569e18ed7419caac01fbab0d8af7a9d3beb5e612d5
+size 4424

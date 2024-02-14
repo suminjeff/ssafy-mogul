@@ -1,13 +1,11 @@
 import Navbar from "@/components/navbar/Navbar";
 import BackgroundTest from "./BackgroundTest";
 
-export const dynamic = "force-dynamic";
-
-export default function MyLibraryLists() {
+export default function profile() {
   return (
     <div>
-      <div>
-        <Navbar />
+      <Navbar />
+      <div className="text-center">
         <BackgroundTest />
       </div>
     </div>

@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1935d3bba9da3d0a37f8815980db0997e4003c369378602f9a049f76d17712c0
-size 762
+package com.mogul.demo.user.dto;
+
+import java.time.LocalDateTime;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+
+@AllArgsConstructor
+@Getter
+public class UserDto {
+	private Long id;
+	private String email;
+	private String password;
+	private String nickname;
+	private LocalDateTime registeredDate;
+	private LocalDateTime deletedDate;
+	private Byte isDeleted;
+}

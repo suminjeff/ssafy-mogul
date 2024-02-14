@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b62df1c7b3a234d9351472c30ed7c7b08a309302c91ff1f92898db62b74fad1a
-size 746
+package com.mogul.demo.user.config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+import io.swagger.v3.oas.models.OpenAPI;
+
+@Configuration
+public class SwaggerConfig {
+	@Bean
+	public OpenAPI openAPI() {
+		return new OpenAPI()
+			.info(new io.swagger.v3.oas.models.info.Info()
+				.title("Mogul 프로젝트 API")
+				.version("v1.0.0"));
+	}
+}

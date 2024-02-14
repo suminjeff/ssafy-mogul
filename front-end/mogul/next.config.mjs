@@ -1,9 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: false,
-  trailingSlash: true,
+  reactStrictMode: true,
   basePath: '/public',
-  output: 'standalone',
   images: {
     remotePatterns: [
       {

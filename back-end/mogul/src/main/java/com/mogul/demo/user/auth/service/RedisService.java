@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fa990b1d5307b0e61ab9ea37d5377b84f58b717699f5333029976c19798611a4
-size 322
+package com.mogul.demo.user.auth.service;
+
+import java.time.Duration;
+
+public interface RedisService {
+	/*
+	 * Redis에는 파기된 토큰(로그아웃한 사용자의 토큰)이 저장된다.
+	 */
+
+	void revoke(Long userId, String value, Duration expiry);
+
+	String findBykey(Long key);
+
+	boolean existsBykey(Long key);
+}

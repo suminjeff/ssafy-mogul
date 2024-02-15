@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c29d25e14e39000a6ce3cf9a53aa965cbd24d6f7a4cf0c12d234c565ddd47374
-size 349
+import Navbar from "@/components/navbar/Navbar";
+// import BoardList from "./[id]/BoardList";
+import BackgroundTest from "./BackgroundTest";
+
+export const dynamic = "force-dynamic";
+
+export default function Board() {
+  return (
+    <div>
+      <Navbar />
+      <div className="text-center">
+        <BackgroundTest />
+      </div>
+    </div>
+  );
+}

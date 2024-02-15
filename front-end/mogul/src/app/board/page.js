@@ -1,4 +1,5 @@
 import Navbar from "@/components/navbar/Navbar";
+import Footer from "@/components/footer/Footer";
 // import BoardList from "./[id]/BoardList";
 import BackgroundTest from "./BackgroundTest";
 
@@ -11,6 +12,7 @@ export default function Board() {
       <div className="text-center">
         <BackgroundTest />
       </div>
+      <Footer />
     </div>
   );
 }

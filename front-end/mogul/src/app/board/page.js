@@ -1,4 +1,5 @@
 import Navbar from "@/components/navbar/Navbar";
+// import BoardList from "./[id]/BoardList";
 import BackgroundTest from "./BackgroundTest";
 
 export const dynamic = "force-dynamic";

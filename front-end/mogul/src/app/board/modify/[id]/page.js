@@ -1,5 +1,5 @@
 import Navbar from "@/components/navbar/Navbar";
-
+import Footer from "@/components/footer/Footer";
 import BackgroundTest from "./BackgroundTest";
 
 export default function Page({ params }) {
@@ -10,6 +10,7 @@ export default function Page({ params }) {
       <div className="text-center">
         <BackgroundTest boardId={params.id} />
       </div>
+      <Footer />
     </div>
   );
 }

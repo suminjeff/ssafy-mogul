@@ -1,5 +1,5 @@
 import Navbar from "@/components/navbar/Navbar";
-import MypageContainer from "./MypageContainer";
+import Footer from "@/components/footer/Footer";
 import BackgroundTest from "./BackgroundTest";
 
 export default function profile() {
@@ -9,6 +9,7 @@ export default function profile() {
       <div className="text-center">
         <BackgroundTest />
       </div>
+      <Footer />
     </div>
   );
 }

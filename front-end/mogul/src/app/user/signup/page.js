@@ -1,6 +1,6 @@
 "use client";
 import Signup from "./Signup";
-
+import Footer from "@/components/footer/Footer";
 // export const dynamic = "force-dynamic";
 
 export default function Form() {
@@ -14,9 +14,8 @@ export default function Form() {
 
   return (
     <div>
-      <div className="text-center p-8">
-        <Signup />
-      </div>
+      <Signup />
+      <Footer />
     </div>
   );
 }

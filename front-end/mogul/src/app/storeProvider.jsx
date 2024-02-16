@@ -1,14 +1,3 @@
-"use client";
-
-import { useRef } from "react";
-import { Provider } from "react-redux";
-import { makeStore } from "../redux/store";
-import { initializeCount } from "../";
-export default function StoreProvider({ children }) {
-  const storeRef = useRef();
-  if (!storeRef.current) {
-    storeRef.current = makeStore();
-  }
-
-  return <Provider store={storeRef.current}>{children}</Provider>;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:2220408aca6da6bfd6a5b4a97d55c2f9302845bbedda6177750b9515914eb69d
+size 390

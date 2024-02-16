@@ -1,16 +1,3 @@
-import Navbar from "@/components/navbar/Navbar";
-import Footer from "@/components/footer/Footer";
-import BackgroundTest from "./BackgroundTest";
-
-export default function Page({ params }) {
-  return (
-    <div>
-      <Navbar />
-      {/* <div>글수정 페이지입니다 글번호는 : {params.id}</div> */}
-      <div className="text-center">
-        <BackgroundTest boardId={params.id} />
-      </div>
-      <Footer />
-    </div>
-  );
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f6cb9a7c2c7b9eb6884f51169834cac69381d5d770561a6cedcecff8e4301b3b
+size 439

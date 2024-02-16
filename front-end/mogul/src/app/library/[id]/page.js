@@ -1,17 +1,3 @@
-import Navbar from "@/components/navbar/Navbar";
-import Footer from "@/components/footer/Footer";
-// import LibraryIndividual from "./LibraryIndividual";
-import BackgroundTest from "./BackgroundTest";
-
-export default function LibraryDetail({ params }) {
-  return (
-    <div>
-      <div>
-        <Navbar />
-        {/* <LibraryIndividual userId={params.id} /> */}
-        <BackgroundTest libraryId={params.id} />
-        <Footer />
-      </div>
-    </div>
-  );
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d9dce11a0789c54c11c99f90eaea289ebe1433ed182f557bad5e68ebdfb21bd9
+size 462

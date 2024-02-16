@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b
-size 1
+
+24/02/01 
+
+너무 졸려서 내일 조금 더 일찍가서 하겠습니다 

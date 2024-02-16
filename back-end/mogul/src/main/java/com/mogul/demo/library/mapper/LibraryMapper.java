@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8a5592e587c35ca66d180f2d4e666cf51e605f4557bbb3f36007afafb221c54b
-size 1260
+package com.mogul.demo.library.mapper;
+
+import com.mogul.demo.library.dto.*;
+import com.mogul.demo.library.entity.*;
+import org.mapstruct.Mapper;
+import org.mapstruct.Mapping;
+
+@Mapper
+public interface LibraryMapper {
+
+    public static LibraryMapper INSTANCE = new LibraryMapperImpl();
+
+    @Mapping(source = "libraryId", target = "id")
+    LibraryResponse fromLibraryWebtoonThumbnailEntityToLibraryResponse(LibraryWebtoonThumbnailEntity libraryWebtoonThumbnailEntity);
+
+
+    LibraryResponse fromLibraryThumbnailEntityToLibraryResponse(LibraryThumbnailEntity libraryThumbnailEntity);
+
+    LibraryEntity fromLibraryCreateRequestToLibraryEntity(LibraryCreateRequest libraryCreateRequest);
+
+    @Mapping(source = "id", target = "libraryId")
+    LibraryWebtoonEntity fromLibraryAddWebtoonRequestToLibraryWebtoonEntity(LibraryAddWebtoonRequest libraryAddWebtoonRequest);
+
+    SubscriptionResponse fromLibrarySubscriptionThumbnailEntityToSubscriptionResponse(LibrarySubscriptionThumbnailEntity librarySubscriptionThumbnailEntity);
+
+    LibraryUserEntity fromSubscriptionRequestToLibraryUserEntity(SubcriptionRequest subcriptionRequest);
+
+    LibraryUserEntity fromSubscriptionCancelRequestToLibraryUserEntity(SubscriptionCancelRequest subscriptionCancelRequest);
+}

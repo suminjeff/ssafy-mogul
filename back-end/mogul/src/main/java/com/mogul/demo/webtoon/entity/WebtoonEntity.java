@@ -1,3 +1,79 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:72e3ee48b26ee72f6bcdee2f4792802c44c43861557be43d13e0d6f11b20fa64
-size 2084
+package com.mogul.demo.webtoon.entity;
+
+import jakarta.persistence.*;
+import lombok.*;
+import org.hibernate.annotations.ColumnDefault;
+import org.hibernate.annotations.CreationTimestamp;
+
+import java.time.LocalDate;
+import java.util.Date;
+
+@Entity
+@Table(name = "webtoon")
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+public class WebtoonEntity {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name="webtoon_id", nullable = false)
+    private Long id;
+
+    @Column(name = "webtoon_title", nullable = false)
+    private String title;
+
+    @Column(name = "webtoon_author", nullable = false)
+    private String author;
+
+    @Column(name = "webtoon_genre", nullable = false)
+    private String genre;
+
+    @Column(name = "webtoon_platform", nullable = false)
+    private String platform;
+
+    @Column(name = "webtoon_link", nullable = false)
+    private String link;
+
+    @Column(name = "webtoon_start_date", nullable = false)
+    private String startDate;
+
+    @Column(name = "webtoon_summary", nullable = false)
+    private String summary;
+
+    @Column(name = "webtoon_grade", nullable = false)
+    @ColumnDefault("0.0")
+    private Float grade;
+
+    @Column(name = "webtoon_drawing_grade", nullable = false)
+    @ColumnDefault("0.0")
+    private Float drawingGrade;
+
+    @Column(name = "webtoon_story_grade", nullable = false)
+    @ColumnDefault("0.0")
+    private Float storyGrade;
+
+    @Column(name = "webtoon_directing_grade", nullable = false)
+    @ColumnDefault("0.0")
+    private Float directingGrade;
+
+    @Column(name = "webtoon_registered_date", nullable = false)
+    @CreationTimestamp
+    private Date registeredDate;
+
+    @Column(name = "webtoon_deleted_date")
+    private Date deletedDate;
+
+    @Column(name = "webtoon_is_deleted", nullable = false)
+    @Builder.Default
+    private Boolean isDeleted = false;
+
+    @Column(name = "webtoon_thumbnail", nullable = false)
+    private String thumbnail;
+
+    @Column(name = "webtoon_is_embedded", nullable = false)
+    @Builder.Default
+    private Boolean isEmbedded = false;
+}

@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ac4f84e33b23c89b811ad1e93afba79007104e780507d65a9edd5273e0ed6ece
-size 516
+package com.mogul.demo.chat.repository;
+
+import com.mogul.demo.chat.document.ChatMessageDocument;
+import org.springframework.data.mongodb.repository.MongoRepository;
+import org.springframework.stereotype.Repository;
+
+import java.util.Date;
+import java.util.List;
+import java.util.Optional;
+
+@Repository
+public interface ChatMessageRepository extends MongoRepository<ChatMessageDocument, String> {
+    List<ChatMessageDocument> findByWebtoonIdAndRegisteredDateBetween(Long webtoonId, Date startDate, Date endDate);
+}

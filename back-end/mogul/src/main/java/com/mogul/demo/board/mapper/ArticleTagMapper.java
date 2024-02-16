@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f35bb3653d1e544f2017cfd98ba86601426c5e10dde14d5b47104dfc1814c7e3
-size 626
+package com.mogul.demo.board.mapper;
+
+import org.mapstruct.Mapper;
+import org.mapstruct.factory.Mappers;
+
+import com.mogul.demo.board.dto.ArticleTagRequest;
+import com.mogul.demo.board.dto.ArticleTagResponse;
+import com.mogul.demo.board.entity.ArticleTag;
+
+@Mapper
+public interface ArticleTagMapper {
+	ArticleTagMapper INSTANCE = Mappers.getMapper(ArticleTagMapper.class);
+	ArticleTagResponse articleTagToArticleTagResponse(ArticleTag articleTag);
+	ArticleTag articleTagRequestToArticleTag(ArticleTagRequest articleTagRequest);
+	ArticleTagResponse articleTagResponseToArticleTagRequest(ArticleTagRequest articleTagRequest);
+}

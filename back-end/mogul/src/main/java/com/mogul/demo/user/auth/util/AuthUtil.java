@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:603a245f5cd5a7bc9177bf0e632e7261a988cdaff020f4ed7848919bcb9d90f5
-size 904
+package com.mogul.demo.user.auth.util;
+
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
+
+import com.mogul.demo.user.auth.exception.UnauthorizedException;
+import com.mogul.demo.user.dto.UserPrincipal;
+
+public class AuthUtil {
+	public static UserPrincipal getAuthenticationInfo() throws UnauthorizedException {
+		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+
+		if(!auth.isAuthenticated()) {
+			throw new UnauthorizedException();
+		}
+
+		return (UserPrincipal) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+	}
+
+	public static Long getAuthenticationInfoId() throws UnauthorizedException {
+		try {
+			return Long.parseLong(getAuthenticationInfo().getUsername());
+		} catch (NumberFormatException | NullPointerException e) {
+			throw new UnauthorizedException();
+		}
+	}
+}

@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b108241f991ec7ae5945c0abbf829832eee27cb9b5510788d20521175a7b80a8
-size 618
+"use client";
+
+import LibraryPopular from "./LibraryPopular";
+
+export default function BackgroundTest() {
+  return (
+    <div>
+      <div
+        className="mx-auto mt-11 mb-10 border-black rounded-3xl "
+        style={{ backgroundColor: "#DED0B6", maxWidth: "80%" }}
+      >
+        <div>
+          <div className="text-center p-8">
+            {/* <div
+              className="font-bold mt-5"
+              style={{ fontSize: "27px", color: "#FAEED1" }}
+            >
+              마이페이지
+            </div> */}
+            <LibraryPopular />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

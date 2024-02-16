@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:256c07a747bf579efc418a3bc9c47870c1568786da16a603ac6da4951e412a8e
-size 573
+package com.mogul.demo.library.dto;
+
+import lombok.*;
+
+import java.util.Date;
+
+@Getter
+@Setter
+@ToString
+@NoArgsConstructor
+@AllArgsConstructor
+public class SubscriptionResponse {
+    private Long id;
+    private Long ownerId;
+    private String ownerNickname;
+    private Date subscribeDate;
+    private Date registeredDate;
+    private Date deletedDate;
+    private Boolean isDeleted;
+    private String name;
+    private Long subscriberNumber;
+    private String thumbnail1;
+    private String thumbnail2;
+    private String thumbnail3;
+    private String thumbnail4;
+}

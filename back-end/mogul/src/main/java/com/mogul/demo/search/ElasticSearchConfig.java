@@ -1,3 +1,45 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d40cc0fc79aded0e4579d171067f04c79efc8805ed20b7e6e448a5e20cd1be63
-size 1543
+package com.mogul.demo.search;
+
+import java.security.KeyManagementException;
+import java.security.NoSuchAlgorithmException;
+import java.security.cert.X509Certificate;
+
+import javax.net.ssl.HostnameVerifier;
+import javax.net.ssl.HttpsURLConnection;
+import javax.net.ssl.SSLContext;
+import javax.net.ssl.TrustManager;
+import javax.net.ssl.X509TrustManager;
+
+import org.springframework.beans.factory.annotation.Configurable;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.data.elasticsearch.client.ClientConfiguration;
+import org.springframework.data.elasticsearch.client.elc.ElasticsearchClients;
+import org.springframework.data.elasticsearch.client.elc.ElasticsearchConfiguration;
+import org.springframework.data.elasticsearch.repository.config.EnableElasticsearchRepositories;
+
+@EnableElasticsearchRepositories
+@Configuration
+public class ElasticSearchConfig extends ElasticsearchConfiguration {
+
+	@Value("${elastic.host}")
+	private String host;
+
+	@Value("${elastic.username}")
+	private String username;
+
+	@Value("${elastic.password}")
+	private String password;
+
+	@Override
+	public ClientConfiguration clientConfiguration() {
+		return ClientConfiguration.builder()
+			.connectedTo(host)
+			.withBasicAuth(username,password)
+			.withClientConfigurer(ElasticsearchClients.ElasticsearchRestClientConfigurationCallback.from(restClientBuilder -> {
+				// configure the Elasticsearch RestClient
+				return restClientBuilder;
+			}))
+			.build();
+	}
+}

@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bb44416b1bf744a553d751eabd2f008a6fd49c294b182be01f6ab62488997654
-size 808
+package com.mogul.demo.user.auth.service;
+
+import java.time.Duration;
+
+import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import lombok.RequiredArgsConstructor;
+
+@Service
+@RequiredArgsConstructor
+public class RedisServiceImpl implements RedisService {
+	private final RedisTemplate<Long, String> redisTemplate;
+
+	@Override
+	@Transactional
+	public void revoke(Long userId, String value, Duration expiry) {
+		redisTemplate.opsForValue().set(userId, value, expiry);
+	}
+
+	@Override
+	@Transactional
+	public String findBykey(Long key) {
+		return redisTemplate.opsForValue().get(key);
+	}
+
+	@Override
+	@Transactional
+	public boolean existsBykey(Long key) {
+		return (findBykey(key) != null);
+	}
+}

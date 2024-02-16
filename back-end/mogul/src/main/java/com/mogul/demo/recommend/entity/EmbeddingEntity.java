@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:30be173f20024bbc699ea01a8d27e575cdc3614f200d21fbcad0a73726c9ef1a
-size 518
+package com.mogul.demo.recommend.entity;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Entity
+@Table(name = "webtoon_embedding")
+public class EmbeddingEntity {
+    @Id
+    @Column(name = "webtoon_id")
+    private Long webtoonId;
+
+    @Column(name = "embedding")
+    private String embedding;
+}

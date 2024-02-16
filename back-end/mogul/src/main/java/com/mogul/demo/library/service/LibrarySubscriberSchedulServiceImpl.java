@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:26018533f00bf3ab82976508dc84aebffae794226a831f4604c0657919714158
-size 1181
+package com.mogul.demo.library.service;
+
+import com.mogul.demo.library.repository.LibraryRepository;
+import com.mogul.demo.library.repository.LibraryUserRepository;
+import lombok.RequiredArgsConstructor;
+import org.springframework.scheduling.annotation.Scheduled;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+@Service
+@RequiredArgsConstructor
+public class LibrarySubscriberSchedulServiceImpl implements LibrarySubscriberScheduleService{
+
+    private final LibraryRepository libraryRepository;
+
+    private final LibraryUserRepository libraryUserRepository;
+
+    @Scheduled(fixedRate = 3600000)
+    @Override
+    @Transactional
+    public void getSubscriberNumber(){
+        Long min = libraryRepository.getMinId();
+        Long max = libraryRepository.getMaxId();
+        for(Long i = min; i <= max; i++){
+            if(!libraryRepository.existsById(i)||libraryRepository.findIsDeletedById(i)){
+                continue;
+            }
+            Long subscriberNumber = libraryUserRepository.countByLibraryId(i);
+            libraryRepository.updateSubscriberNumberById(i, subscriberNumber);
+        }
+    }
+
+}

@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6c29749ec632716f0935884243c0101bda15a0ab1b21d485b8e385018768482f
-size 623
+package com.mogul.demo.library.entity;
+
+import jakarta.persistence.*;
+import lombok.*;
+import org.hibernate.annotations.CreationTimestamp;
+
+import java.util.Date;
+
+@Entity
+@Table(name = "user_library")
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@ToString
+@IdClass(LibraryUserPK.class)
+public class LibraryUserEntity {
+    @Id
+    @Column(name = "library_id", nullable = false)
+    private Long libraryId;
+
+    @Id
+    @Column(name = "user_id",nullable = false)
+    private Long userId;
+
+    @Column(name = "subscribe_registered_date", nullable = false)
+    @CreationTimestamp
+    private Date registeredDate;
+}

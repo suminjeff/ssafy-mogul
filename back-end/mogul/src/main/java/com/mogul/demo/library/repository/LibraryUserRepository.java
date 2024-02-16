@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:80f3f1a37513dfb16c3843ebc6455064c730f1a7146591ca1fa0ed9603f34848
-size 826
+package com.mogul.demo.library.repository;
+
+import com.mogul.demo.library.entity.LibraryUserEntity;
+import com.mogul.demo.library.entity.LibraryUserPK;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
+
+public interface LibraryUserRepository extends JpaRepository<LibraryUserEntity, LibraryUserPK> {
+
+    @Query("select case when count(lu)=1 then true else false end from LibraryUserEntity lu where lu.libraryId=:libraryId and lu.userId=:userId")
+    boolean existsByLibraryIdAndUserId(@Param("libraryId") Long libraryId,@Param("userId") Long userId);
+
+    @Query("select count(*) from LibraryUserEntity lu where lu.libraryId=:libraryId")
+    long countByLibraryId(@Param("libraryId") Long libraryId);
+}

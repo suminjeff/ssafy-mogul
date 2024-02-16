@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4a7ce173eca17e4d484f6ad3de42b38a8cfe490936d2c6e7e2add49f2de47cf3
-size 593
+package com.mogul.demo.library.dto;
+
+import jakarta.validation.constraints.Max;
+import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
+import lombok.*;
+
+import java.util.Date;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@ToString
+@EqualsAndHashCode
+public class SubcriptionRequest {
+
+    @NotNull(message = "서재 아이디는 비어 있을 수 없습니다.")
+    @Min(value = 1L, message = "서재 아이디는 1이상 이어야 합니다.")
+    private Long libraryId;
+
+    private Long userId;
+
+}

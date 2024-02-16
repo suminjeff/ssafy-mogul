@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:92756c8075830c63370023d86598b064ba04dad7e0dedc62795e4618c1ec1c5c
-size 674
+package com.mogul.demo.library.repository;
+
+import com.mogul.demo.library.entity.LibraryWebtoonThumbnailEntity;
+import com.mogul.demo.library.entity.LibraryWebtoonThumbnailPK;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import java.util.List;
+import java.util.Optional;
+
+@Repository
+public interface LibraryWebtoonThumbnailRepository extends JpaRepository<LibraryWebtoonThumbnailEntity, LibraryWebtoonThumbnailPK> {
+
+    List<LibraryWebtoonThumbnailEntity> findByWebtoonIdAndIsDeletedFalseOrderBySubscriberNumberDesc(Long webtoonId, Pageable pageable);
+
+}

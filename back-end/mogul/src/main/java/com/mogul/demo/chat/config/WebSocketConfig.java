@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e27fde41688033243a0157e6081d07ac351b2f8d82f17af6bf33f182a958df2f
-size 1007
+package com.mogul.demo.chat.config;
+
+import com.mogul.demo.chat.handler.ChatWebSocketHandler;
+import com.mogul.demo.chat.interceptor.ChatHandShakeInterceptor;
+import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.socket.config.annotation.EnableWebSocket;
+import org.springframework.web.socket.config.annotation.WebSocketConfigurer;
+import org.springframework.web.socket.config.annotation.WebSocketHandlerRegistry;
+
+@Configuration
+@RequiredArgsConstructor
+@EnableWebSocket
+public class WebSocketConfig implements WebSocketConfigurer {
+
+    private final ChatWebSocketHandler chatWebSocketHandler;
+
+    @Override
+    public void registerWebSocketHandlers(WebSocketHandlerRegistry registry) {
+        registry.addHandler(chatWebSocketHandler, "/api/chat/**")
+                .addInterceptors( new ChatHandShakeInterceptor())
+                .setAllowedOrigins("*");
+    }
+}

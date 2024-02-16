@@ -1,3 +1,36 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:653c8c3c1e91a94a3c64af400fd355d70f8a4e5b1c698f8166452222fcc36e53
-size 852
+package com.mogul.demo.user.auth.token;
+
+import javax.crypto.SecretKey;
+
+import io.jsonwebtoken.Claims;
+import io.jsonwebtoken.ExpiredJwtException;
+import io.jsonwebtoken.JwtException;
+import io.jsonwebtoken.Jwts;
+import lombok.AccessLevel;
+import lombok.Getter;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+
+@RequiredArgsConstructor
+@Slf4j
+public class AuthToken {
+	@Getter(AccessLevel.PACKAGE)
+	private final String token;
+
+	public Claims getClaims(SecretKey key) throws ExpiredJwtException {
+		Claims claims = null;
+		try {
+			claims = Jwts.parser()
+				.verifyWith(key)
+				.build()
+				.parseSignedClaims(token)
+				.getPayload();
+		} catch (ExpiredJwtException e) {
+			throw e;
+		} catch (JwtException | IllegalArgumentException ignored) {
+			log.debug("Auth Token is invalid. : {}", token);
+		}
+
+		return claims;
+	}
+}

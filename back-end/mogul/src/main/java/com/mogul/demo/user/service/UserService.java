@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e3fbc93266d71e77ba0b4c8c02618a0bd0eb472c20491ccf41b90bd3c2b9ca6d
-size 702
+package com.mogul.demo.user.service;
+
+import com.mogul.demo.user.auth.token.AuthToken;
+import com.mogul.demo.user.dto.UserDto;
+import com.mogul.demo.user.dto.UserJoinRequest;
+import com.mogul.demo.user.dto.UserLoginRequest;
+import com.mogul.demo.user.dto.UserResponse;
+import com.mogul.demo.user.entity.User;
+
+public interface UserService {
+	String[] login(UserLoginRequest userLoginRequest);
+
+	UserDto join(UserJoinRequest userJoinRequest);
+
+	boolean isDuplicateEmail(String email);
+
+	boolean isDuplicateNickname(String nickname);
+
+	void unregister(String userId);
+
+	void logout(AuthToken token);
+
+	UserResponse findUserResponseById(Long id);
+
+	User findUserById(Long id);
+
+	User getUserFromAuth();
+}

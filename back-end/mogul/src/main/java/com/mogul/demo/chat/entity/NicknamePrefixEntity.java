@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c99c8b47883606126870bc7550a22baf12ebe9048d8b3292769246b14c98a319
-size 544
+package com.mogul.demo.chat.entity;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Entity
+@Table(name = "nickname_prefix")
+@Getter
+@Setter
+@NoArgsConstructor
+public class NicknamePrefixEntity {
+
+    @Id
+    @Column(name = "nickname_prefix_id", nullable = false)
+    private Long id;
+
+    @Column(name = "nickname_prefix_value", nullable = false)
+    private String prefix;
+
+}

@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0b427f165dd143846a812d29de0670abf42f23668611abee15aa400a545d0015
-size 563
+package com.mogul.demo.recommend.service;
+
+import com.mogul.demo.recommend.dto.WebtoonInfo;
+import com.mogul.demo.recommend.dto.WebtoonRecommendResponse;
+import com.mogul.demo.webtoon.dto.WebtoonDetailResponse;
+
+import java.io.IOException;
+import java.util.List;
+
+import org.elasticsearch.client.Response;
+
+public interface RecommendService {
+    List<WebtoonRecommendResponse> ListRecommandWebtoons(Long webtoonId);
+    List<WebtoonInfo> ElasticSearchKnnRequest(String queryVector) throws IOException;
+    List<WebtoonInfo> parseResponse(String jsonResponse);
+}

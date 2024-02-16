@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7d874e61d1738901ad3643286111cb8fbea87bf279e939f3c6b0bb57458deb31
-size 736
+package com.mogul.demo.chat.document;
+
+import lombok.*;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+import java.util.Date;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@ToString
+@EqualsAndHashCode
+@Document(collection = "chat")
+public class ChatMessageDocument {
+    private String writer;
+    private String message;
+    private Long webtoonId;
+    private Date registeredDate;
+
+    public ChatMessageDocument(ChatMessageDocument chatMessageDocument){
+        this.writer = chatMessageDocument.getWriter();
+        this.message = chatMessageDocument.getMessage();
+        this.webtoonId = chatMessageDocument.getWebtoonId();
+        this.registeredDate = chatMessageDocument.getRegisteredDate();
+    }
+}

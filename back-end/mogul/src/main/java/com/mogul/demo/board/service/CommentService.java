@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:da7268faa2f641dda91ae825bc8eb07f8bfad90372b1f49e84ea02bab8167352
-size 616
+package com.mogul.demo.board.service;
+
+import java.util.List;
+
+import com.mogul.demo.board.dto.CommentCreateRequest;
+import com.mogul.demo.board.dto.CommentGroupResponse;
+import com.mogul.demo.board.dto.CommentReadResponse;
+import com.mogul.demo.user.entity.User;
+
+public interface CommentService {
+	/*
+	* todo
+	* 댓글 그룹 조회
+	* 댓글 작성
+	* 댓글 삭제
+	* */
+	List<CommentGroupResponse> findCommentList(Long articleId);
+	CommentReadResponse addComment(CommentCreateRequest commentCreateRequest);
+	boolean removeComment(Long id);
+	List<CommentReadResponse> findCommentListByUser(int page,int size);
+}

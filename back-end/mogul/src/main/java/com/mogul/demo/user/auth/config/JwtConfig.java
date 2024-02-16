@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:93fe95c287103e02fcdb4eee5a24916b94b3363aee410b7e176eb893a359d344
-size 667
+package com.mogul.demo.user.auth.config;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+import com.mogul.demo.user.auth.token.AuthTokenProvider;
+import com.mogul.demo.user.auth.token.AuthTokenProviderImpl;
+
+@Configuration
+public class JwtConfig {
+	@Value("${jwt.secret-key}")
+	private String secretKey;
+
+	@Value("${jwt.access-token.lifetime}")
+	private String accessTokenLifetimeSeconds;
+
+	@Bean
+	public AuthTokenProvider authTokenProvider() {
+		return new AuthTokenProviderImpl(secretKey, Long.parseLong(accessTokenLifetimeSeconds));
+	}
+}

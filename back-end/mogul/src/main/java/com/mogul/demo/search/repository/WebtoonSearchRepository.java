@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6e5ab9d7c310058357e13d6b3aa1f150736a70de8dd6c3eb8ad48e5cf224f087
-size 824
+package com.mogul.demo.search.repository;
+
+import java.util.List;
+
+import org.springframework.data.elasticsearch.annotations.Query;
+import org.springframework.data.elasticsearch.repository.ElasticsearchRepository;
+
+import com.mogul.demo.search.document.WebtoonDocument;
+
+public interface WebtoonSearchRepository extends ElasticsearchRepository<WebtoonDocument,String> {
+
+	List<WebtoonDocument> findByTitleContainingOrSummaryContaining(String summary,String title);
+	@Query("{\"match\": {\"webtoon_title\": {\"query\": \"?0\"}}}")
+	List<WebtoonDocument> findByTitle(String keyword);
+	@Query("{\"match\": {\"webtoon_summary\": {\"query\": \"?0\"}}}")
+	List<WebtoonDocument> findBySummary(String keyword);
+	@Query("{\"match\": {\"webtoon_genre\": {\"query\": \"?0\"}}}")
+	List<WebtoonDocument> findByGenre(String keyword);
+
+
+}

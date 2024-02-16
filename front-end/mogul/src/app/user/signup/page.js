@@ -1,22 +1,3 @@
-"use client";
-import Signup from "./Signup";
-
-// export const dynamic = "force-dynamic";
-
-export default function Form() {
-  const token =
-    typeof window !== "undefined"
-      ? sessionStorage.getItem("accessToken")
-      : null;
-
-  // const token = sessionStorage.getItem("accessToken");
-  // console.log(token);
-
-  return (
-    <div>
-      <div className="text-center p-8">
-        <Signup />
-      </div>
-    </div>
-  );
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:97121e4372b9f8b49fb82b66f6f3b35496db99d12fdf835d8aecb6977d5c9f92
+size 439
